@@ -1,12 +1,23 @@
 import React from "react";
-import myImage from "../../fonts/BG Hero.png"; // Rasmni import qilish
+import myImage1 from "../../fonts/01 (1).png";
+import myImage2 from "../../fonts/01 (2).png";
+import myImage3 from "../../fonts/01.png";
+import myImage4 from "../../fonts/BG Content.png";
 import Link from "next/link";
+import Image from "next/image";
 
 function Page() {
   return (
     <>
       {/* navbar */}
-      <section id="datas1" className="max-h-[100vh] animate-slideIn div-2 my-auto">
+      <div className="absolute h-[200vh] w-full bg-[#000]">
+      <Image
+        className="absolute top-0 left-0 pb-[-20vh]  w-full h-[150vh] object-cover" 
+        src="https://avatars.dzeninfra.ru/get-zen_doc/5232843/pub_620e79ebee36c56d78e4db37_620e7cf2b116cb72f0d43926/scale_1200"
+        alt="Beautiful flower"
+        layout="fill" />
+      </div>
+      <section id="datas1" className="max-h-[100vh] relative z-10 animate-slideIn div-2 my-auto">
         <div className="text-[#fff] max-w-[1760px] mx-auto pt-[3vh] flex justify-between items-center px-5">
           <div className="text-[32px] div-1">MNTN</div>
           <div className="font-[700] text-[18px] flex gap-[40px]">
@@ -58,11 +69,11 @@ function Page() {
               Be prepared for the Mountains and beyond!
             </h1>
             <Link href="#datas5">
-            <button className="text-[18px] font-[600]">scroll down ↓↷ↆ</button>
+            <button className="text-[18px] font-[600]">scroll down ↷</button>
             </Link>
           </div>
           <p></p>
-          <div className="flex flex-col fixed right-[60px]">
+          <div className="flex flex-col">
             <Link href="#datas1">
             <button className="border-r-[1px] text-[18px] font-[600] px-[32px] py-[22px] w-[100px] border-[#fff]">
               Start
@@ -86,8 +97,9 @@ function Page() {
           </div>
         </div>
       </section>
-      <section id="datas2" className="animate-slideIn h-[100vh] div-2 mt-[800px] div-2 flex flex-col justify-center">
-        <div className="max-w-[1462px]  mx-auto my-auto flex justify-between items-center ">
+      <section id="datas2" className="animate-slideIn relative h-[100vh] div-2 mt-[800px] div-2 flex flex-col justify-center">
+        <Image className="absolute z-[15] top-[-200px] w-full" src={myImage4} alt="" />
+        <div className="max-w-[1462px] relative z-20  mx-auto my-auto flex justify-between items-center ">
           <div className="w-[60%] p-20 tracking-[1px] flex flex-col gap-[30px]">
             <p className="font-[800] text-[18px] text-[#fbd784] tracking-[4px]">
               ———— GEt Started
@@ -108,14 +120,14 @@ function Page() {
             </a>
           </div>
           <div className="w-[566px] h-[720px] bg-white">
-            salomdtjcmhlggghgghhgghhgggjggjghjghjgjgjghjghj
+         <Image src={myImage1} alt=""/>
           </div>
         </div>
       </section>
       <section id="datas3" className="animate-slideIn h-[100vh] div-2 flex flex-col justify-center">
         <div className="max-w-[1462px] mx-auto flex justify-between items-center">
           <div className="w-[566px] h-[720px] bg-white">
-            salomdtjcmhlggghgghhgghhgggjggjghjghjgjgjghjghj
+          <Image src={myImage2} alt=""/>
           </div>
           <div className="w-[60%] p-20 tracking-[1px] flex flex-col gap-[30px]">
             <p className="font-[800] text-[18px] text-[#fbd784] tracking-[4px]">
@@ -160,13 +172,13 @@ function Page() {
             </a>
           </div>
           <div className="w-[566px] h-[720px] bg-white">
-            salomdtjcmhlggghgghhgghhgggjggjghjghjgjgjghjghj
+          <Image src={myImage3} alt=""/>
           </div>
         </div>
       </section>
       {/* //foter */}
       <section id="datas5" className="animate-slideIn h-[20vh] div-2 mt-[50px] ">
-        <div className="flex justify-between max-w-[1760px] mx-auto pb-[50px]">
+        <div className="flex px-5 justify-between max-w-[1760px] mx-auto pb-[50px]">
           <div className="flex flex-col max-w-[370px]">
             <h2 className="text-[32px]">MNTN</h2>
             <p className="font-[700] text-[18px] mt-[20px]">
